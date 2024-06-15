@@ -23,7 +23,3 @@ app.get('/message', (req, res) => {
 
 const port = 3030
 server.listen(port, () => console.log(`Server is running on port ${port}`))
-
-app.get('/**', (req, res) => {
-  res.sendFile(path.resolve('public/index.html'))
-})
